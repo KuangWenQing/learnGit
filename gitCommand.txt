@@ -7,17 +7,16 @@ git commit -m 'commit summary'	# commit to repository
 
 git status
 git diff
-git log
-git log --pretty=oneline
+git log				# print version information (barring reset operate
+git log --pretty=oneline	# print oneline version info
+git reflog			# print all version info (includ reset operate
 
-
-#-------------------------------#
-#	very important		#
-#-------------------------------#
+#---------------------------------------#
+# very important, Like regret medicine  #
+#---------------------------------------#
 git checkout -- fileName.txt	# before 'git add', you can use this command to undo changes
 git reset HEAD fileName.txt	# after 'git add', you should first execute this command, 
 				# and then you can use the previous command (git checkout --)
-
 
 git reset --hard HEAD^		# Back to previous 			version
 git reset --hard HEAD^^		# Back to previous previous 		version
@@ -30,6 +29,24 @@ git reset --hard 123456		# Back to the version which the first 6
 
 git rm file			# after 'rm file', you should execute these 2
 git commit -m 'delete file'	# commands to delete 'file'
+
+
+#---------------------------------------------------#
+# push your repository to the remote github server  #
+#---------------------------------------------------#
+git remote add origin git@github.com:KuangWenQing/learnGit.git
+git push -u origin master
+
+
+#---------------------------#
+# clone from github server  # 
+#        2 methods          #
+#---------------------------#
+git clone git@github.com:michaelliao/gitskills.git
+git clone https://github.com/michaelliao/gitskills.git
+
+
+
 
 
 
