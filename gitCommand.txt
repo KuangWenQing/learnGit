@@ -5,7 +5,14 @@ git init			# initialise repository
 git add	fileName		# add file to index
 git commit -m 'commit summary'	# commit to repository
 
+git status
+git diff
+git log
+git log --pretty=oneline
 
+git checkout -- fileName.txt	# before 'git add', you can use this command to undo changes
+git reset HEAD fileName.txt	# after 'git add', you should first execute this command, 
+				# and then you can use the previous command (git checkout --)
 
 
 
