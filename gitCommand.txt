@@ -1,0 +1,11 @@
+#-----this file introduces the command of the git
+
+
+git init			# initialise repository
+git add	fileName		# add file to index
+git commit -m 'commit summary'	# commit to repository
+
+
+
+
+
