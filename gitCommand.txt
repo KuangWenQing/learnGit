@@ -10,6 +10,10 @@ git diff
 git log
 git log --pretty=oneline
 
+
+#-------------------------------#
+#	very important		#
+#-------------------------------#
 git checkout -- fileName.txt	# before 'git add', you can use this command to undo changes
 git reset HEAD fileName.txt	# after 'git add', you should first execute this command, 
 				# and then you can use the previous command (git checkout --)
@@ -23,5 +27,9 @@ git reset --hard HEAD~100	# Back to the top 100 			version
 
 git reset --hard 123456		# Back to the version which the first 6
 				# digits of version number are 123456
+
+git rm file			# after 'rm file', you should execute these 2
+git commit -m 'delete file'	# commands to delete 'file'
+
 
 
