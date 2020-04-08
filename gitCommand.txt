@@ -47,6 +47,18 @@ git clone https://github.com/michaelliao/gitskills.git
 
 
 
+git branch dev          # create a branch named dev; 
+git checkout dev        # switch to the dev.
+git checkout -b dev     # Equivalent to the 2 statements above
+
+git branch              # View current branch
+git checkout master     # switch to the master
+git merge dev           # merge dev to the master
+git branch -d dev       # delete the branch named dev
+
+git switch -c featurel  # create a branch named dev and switch to the featurel
+git switch master       # switch to the master
+git merge --no-ff -m "merge with no-ff" dev
 
 
 
